@@ -17,8 +17,13 @@ class JumlahUserChart
     public function build(): \ArielMejiaDev\LarapexCharts\PieChart
     {
         $user = Anggota::get();
-        $jumlahLakiLaki = Anggota::where('gender','laki-laki')->count();
-        $jumlahPerempuan = Anggota::where('gender','perempuan')->count();
+        $jumlahProvinsi = Anggota::where('province_id','32')->count();
+        $jumlahKota     =     Anggota::where('regency_id','3273')->count();
+        $jumlahKecamatan =     Anggota::where('district_id','3273240')->count();
+        $jumlahKelurahan =     Anggota::where('village_id','3273240004')->count();
+
+        dd($jumlahProvinsi);
+
         $label = ['Laki-Laki'];
         $labels = ['Perempuan'];
         return $this->chart->pieChart()
