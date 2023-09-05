@@ -10,6 +10,10 @@
 						<th>Nama</th>
 						<th>Email</th>
 						<th>Role</th>
+                        <th>Provinsi</th>
+                        <th>Kota/Kabupaten</th>
+                        <th>Kecamatan</th>
+                        <th>Kelurahan</th>
 						<th>Actions</th>
 					</tr>
 				</thead>
@@ -17,10 +21,9 @@
                 @foreach($users as $item) 
                     <tr>
                         <td> </td>
-                        <td>{{$item -> name}} </td>
+                        <td>{{$item -> name}}  </td>
                         <td>{{$item -> email}} </td>
-                        <td>{{$item -> Utype}}</td>
-                        <td></td>
+                        <td>{{$item -> Utype}} </td>
                     </tr>
                 @endforeach
                 </tbody>
