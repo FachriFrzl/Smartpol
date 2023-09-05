@@ -19,11 +19,12 @@ class JumlahGenderChart
         $user = Anggota::get();
         $jumlahLakiLaki = Anggota::where('gender','laki-laki')->count();
         $jumlahPerempuan = Anggota::where('gender','perempuan')->count();
+
         $label = ['Laki-Laki'];
         $labels = ['Perempuan'];
         return $this->chart->barChart()
-            ->setTitle('Jumlah Data Anggota')
-            ->setSubtitle('Jumlah Data Anggota Per Gender')
+            ->setTitle('')
+            ->setSubtitle('')
             ->addData('Laki-Laki',[$jumlahLakiLaki])
             ->addData('Perempuan',[$jumlahPerempuan])
             ->setXAxis(['','']);

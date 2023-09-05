@@ -70,11 +70,11 @@
 															<span class="text-muted font-weight-bold text-muted d-block">Anggota</span>
 														</td>
 														<td>
-															<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{$item -> nik}}</span>
+															<span class="text-dark-75 font-weight-bolder d-block font-size-lg">{!! $item -> nik !!}</span>
 															<span class="text-muted font-weight-bold">Nomor Induk KTP</span>
 														</td>
 														<td>
-                                                            <span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{$item -> alamat}}</span>
+                                                            <span class="text-dark-75 font-weight-bolder d-block font-size-lg">{!! $item -> alamat !!}</span>
 															<span class="text-muted font-weight-bold">{{$item->regency->name}},{{$item->district->name}},{{$item->village->name}}</span>
 														</td>
                                                         <td class="pr-0"> 
